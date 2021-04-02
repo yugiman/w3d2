@@ -14,6 +14,8 @@ body{
     width: 100%;
     position: absolute ;
     top:0;
+    display: flex;
+    align-items: center;
 }
 
 li{
@@ -25,12 +27,21 @@ a{
 }
 .title{
     width:50%;
-    float: left;
+    
+}
+ul#flex{
+    display: flex;
+    text-align: right;
+    justify-content: flex-end ;
+    align-items: baseline;
+    
 }
 .links{
     width:50%;
-    float:left;
     text-align: right;
+}
+.links a{
+    flex-wrap: nowrap;
 }
 .links ul{
     margin-top:10px;
@@ -52,15 +63,18 @@ a:hover{
     text-decoration: underline;
 }
 #box-area{
-    display:inline-block;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: baseline;
     margin:0 auto;
+    justify-content: center;
 }
 .box{
     margin-top:100px;
     height:400px;
     width:250px;
     border:2px solid #e7ac0e;
-    float:left;
+    
     border-radius:10px;
     margin-left:50px;
     background-color: white;
